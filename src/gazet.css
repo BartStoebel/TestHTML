@@ -37,3 +37,12 @@ body {
 .nieuws a,.nieuws a:visited ,.nieuws a:hover,.nieuws a:active {
     color:#005689;
 }
+
+/**** STRUCTUUR EN LAY-OUT ****/
+/* deze oef gaat door een aantal stadia:
+1. FIXED LAY-OUT: 980px container, basis 5 kol
+*/
+.wikkel {
+    width: 980px;
+    margin: 0 auto;
+} /* dit is dus niet van toepassing op topbanner en footer, enkel wikkel!)*/
