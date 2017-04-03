@@ -9,31 +9,31 @@ and open the template in the editor.
 */
 @charset "utf-8";
 /* CSS Document voor deGazet */
+/* TYPOGRAFIE */
 body {
     font-family:Georgia, "Times New Roman", Times, serif;
-    color:#333;
+    font-size:100%
 }
 h1, h2, h3, h4, h5, h6 {
+    font-weight:normal;
+}
+a, a:visited {
+    text-decoration:none;
+}
+a:hover, a:active {
+    text-decoration:underline;
+}
+/* KLEURENSCHEMAS */
+body {
+    background:white;
+    color:#333;
+}
+#topbanner, footer {
+    background:#EDEDED;
+}
+.nieuws h1,.nieuws h2,.nieuws h3,.nieuws h4,.nieuws h5,.nieuws h6{
     color:#005689;
 }
-nav ul li a {
-    /*typografie*/
-    font-size: 1em;
-    font-weight: bold;
-    text-decoration: none;
-    line-height: 1.3em;
-    text-transform: uppercase;
-    
-    /*kleur en backgrounds */
-    color: #e0e0d5;
-    background: url(../images/nav-bg.gif) no-repeat bottom left;
-    
-    /*box*/
-    float: left;
-    display: block;
-    width: 3.8em;
-    padding: .8em 1em .8em 1em;
-    margin: 0;
-    border: none;
+.nieuws a,.nieuws a:visited ,.nieuws a:hover,.nieuws a:active {
+    color:#005689;
 }
-
