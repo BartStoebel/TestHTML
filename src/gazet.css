@@ -98,4 +98,46 @@ body {
     */
 } /* dit is dus niet van toepassing op topbanner en footer, enkel wikkel!)*/
 
+/****GRID****/
+.span1 {
+    width:196px;
+    float:left;
+}
+.span2 {
+    width:392px;
+    float:left;
+}
+.span3 {
+    width:588px;
+    float:left;
+}
+.span4 {
+    width:784px;
+    float:left;
+}
+.span5 {
+    width:980px;
+    float:left;
+}
+.span5>article {
+    margin-right:0; /* geen gutter in span5*/
+}
+.span5>h2 {
+    margin-right:0; /* geen gutter in span5*/
+}
 
+/*
+clearfix hack
+http://nicolasgallagher.com/micro-clearfix-hack/
+*/
+.clearFix:before, .clearFix:after {
+    content: " ";
+    display: table;
+}
+.clearFix:after {
+    clear: both;
+}
+/* enkel voor IE6/7 */
+.clearFix {
+    *zoom: 1;
+}
