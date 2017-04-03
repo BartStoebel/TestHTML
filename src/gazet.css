@@ -10,15 +10,30 @@ and open the template in the editor.
 @charset "utf-8";
 /* CSS Document voor deGazet */
 body {
-font-family:Georgia, "Times New Roman", Times, serif;
-color:#333;
-background-color: #fcf;
-
-
+    font-family:Georgia, "Times New Roman", Times, serif;
+    color:#333;
 }
 h1, h2, h3, h4, h5, h6 {
-color:#005689;
+    color:#005689;
 }
-ul {
-list-style-image: url(img/w1.gif);
+nav ul li a {
+    /*typografie*/
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    
+    /*kleur en backgrounds */
+    color: #e0e0d5;
+    background: url(../images/nav-bg.gif) no-repeat bottom left;
+    
+    /*box*/
+    float: left;
+    display: block;
+    width: 3.8em;
+    padding: .8em 1em .8em 1em;
+    margin: 0;
+    border: none;
 }
+
