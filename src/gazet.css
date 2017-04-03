@@ -45,4 +45,16 @@ body {
 .wikkel {
     width: 980px;
     margin: 0 auto;
+    /* basis 1em = 16px
+    4px = 0.25em
+    8 = 0.5em
+    10 = 0.625em
+    14 = 0.875em
+    18 = 1.125em
+    20 = 1.25em
+    32 = 2em
+    100 = 6.25em;
+    */
 } /* dit is dus niet van toepassing op topbanner en footer, enkel wikkel!)*/
+
+
