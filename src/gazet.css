@@ -126,6 +126,18 @@ body {
     margin-right:0; /* geen gutter in span5*/
 }
 
+/**** ARTICLE en SECTION OPMAAK ****/
+/* duidelijke grijze titel, rode bovenrand */
+.metTitel { padding-top:0; }
+.metTitel>h2 {
+    background: #EDEDED;
+    border-top: 3px solid #D61D00;
+    margin: 0 20px 0.8em 0;
+    padding: 0.8em 0 0.8em 0.4em;
+}
+/* verborgen titel, enkel voor outline */
+.zonderTitel>h2 { display:none; }
+
 /*
 clearfix hack
 http://nicolasgallagher.com/micro-clearfix-hack/
