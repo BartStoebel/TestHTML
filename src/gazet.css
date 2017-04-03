@@ -9,6 +9,27 @@ and open the template in the editor.
 */
 @charset "utf-8";
 /* CSS Document voor deGazet */
+
+/* NORMALIZE */
+html, body, div, section, article, aside, nav {
+    margin:0;
+    padding:0;
+}
+img {
+    border:none;
+    float:left;
+    margin: 0 1.25em 0.5em 0;
+}
+table{
+    border-collapse:collapse;
+    border-spacing: 0;
+    empty-cells:hide;
+}
+tr,td {
+    margin:0;
+    padding:0;
+}
+
 /* TYPOGRAFIE */
 body {
     font-family:Georgia, "Times New Roman", Times, serif;
