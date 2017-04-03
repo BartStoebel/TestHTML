@@ -126,6 +126,7 @@ body {
     margin-right:0; /* geen gutter in span5*/
 }
 
+
 /**** ARTICLE en SECTION OPMAAK ****/
 /* duidelijke grijze titel, rode bovenrand */
 .metTitel { padding-top:0; }
@@ -168,6 +169,7 @@ article.toparticle>h2 {
     color: #005689; 
     text-decoration:none;
 }
+
 
 /**** EXTRAMENU ****/
 #extramenu {
@@ -247,10 +249,10 @@ article.toparticle>h2 {
 
 /**** BORDERS ****/
 /* default kleur rood */
-.bt8 {border-top:8px solid #D61D00;}
-.bt3 {border-top:3px solid #D61D00;}
-.bb8 {border-bottom:8px solid #D61D00;}
-.bb3 {border-bottom:3px solid #D61D00;}
+.bt8 {border-top:8px solid red;}
+.bt3 {border-top:3px solid green;}
+.bb8 {border-bottom:8px solid blue;}
+.bb3 {border-bottom:3px solid yellow;}
 
 /*
 clearfix hack
