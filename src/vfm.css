@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 11, 2017, 9:03:51 AM
+    Author     : Bart.Stoebel
+*/
+
+#menu {
+list-style-type:none;
+overflow:auto;
+}
+#menu li {
+display:inline-block;
+padding:1em;
+margin: 1em;
+background-color:yellow;
+background-image: url(img/w1.gif);
+background-position: top left;
+background-repeat: repeat;
+}
+#menu li:hover {
+background-color:red;
+
+color:white;
+}
+#menu li a {
+display:inline;
+text-decoration:none;
+}
+
+/*p {border: thin dotted magenta}
+div {
+border-width: 5px;
+border-style: groove dotted;
+border-color: red green blue;
+}
+div {
+margin:0;
+padding:0;
+}*/
+.buiten {
+border:1px solid blue;
+width: 400px;
+overflow:auto;
+}
+.binnen {
+border:1px solid red;
+height:50px;
+}
+.tekst {
+padding: 0 10px;
+}
+.volkleur {
+background: silver;
+padding: 0 10px;
+}
+.kleurmetgoot {
+background: silver;
+margin: 0 10px;
+}
+#outer1{
+    margin: 1em 0;
+    padding: 1em 1em;
+    width: 50%;
+    border: 1px solid red;
+    overflow: auto;
+}
+.vlot{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 0.5em;
+    background: yellow;
+    border: 1px solid red;
+}
