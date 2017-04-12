@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<bieren
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns='http://www.vdab.be/bieren'
+    xsi:schemaLocation='http://www.vdab.be/bieren Bieren.xsd'>
+
+        
+    <soorten>
+        <soort>
+            <soortnr>1</soortnr>
+            <naam>Amber</naam>
+        </soort>
+        <soort>
+            <soortnr>2</soortnr>
+            <naam>Blond</naam>
+        </soort>
+    </soorten>
+
+    <brouwerijen>
+        <brouwerij>
+            <brouwernr>3</brouwernr>
+            <naam>Palm</naam>
+            <adres>
+                <adres>Steenhuffelstraat 1</adres>
+                <postcode>1800</postcode>
+                <plaats>Steenhuffel</plaats>
+            </adres>
+            <omzet>50000</omzet>
+        </brouwerij>
+        <brouwerij>
+            <brouwernr>1</brouwernr>
+            <naam>Moortgat</naam>
+            <adres>
+                <adres>Duvelstraat 1</adres>
+                <postcode>1200</postcode>
+                <plaats>Londerzeel</plaats>
+            </adres>
+        </brouwerij>
+        
+        
+    </brouwerijen>
+    
+    <alle_bieren>
+        <bier>
+            <biernr>1</biernr>
+            <naam>Palm</naam>
+            <brouwernr>3</brouwernr>
+            <soortnr>1</soortnr>
+            <alcohol>1.2</alcohol>
+        </bier>
+        <bier>
+            <biernr>2</biernr>
+            <naam>Duvel</naam>
+            <brouwernr>1</brouwernr>
+            <soortnr>2</soortnr>
+            <alcohol>1.2</alcohol>
+        </bier>
+            
+        
+        
+    </alle_bieren>
+    
+</bieren>
