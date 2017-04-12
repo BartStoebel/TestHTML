@@ -1,0 +1,187 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 10, 2017, 10:09:52 AM
+    Author     : Bart.Stoebel
+*/
+@charset "utf-8";
+
+/* NORMALIZE */
+/* algemene instellingen */
+html, body, div, header, section, article, aside, nav {
+    margin:0;
+    padding:0;
+}
+img{
+    border:none;
+    float:left;
+    margin:0 1.25em 0.5em 0;
+    padding: 0;
+}
+
+/*** KLEUREN ***/
+body{
+    background: white;
+}
+header{
+    background: orangered;
+}
+footer{
+    background: graytext;
+}
+.footer{
+    background: graytext;
+}
+footer p, footer div{
+    background: graytext;
+    color:white;
+}
+time{
+    color: graytext;
+    background: white;
+}
+h1{
+    color: green;
+}
+h2{
+    color: orangered;
+}
+h3{
+    font-family: cursive;
+    font-style: italic;
+    color: gray;
+}
+p{
+    color: gray;
+}
+header a, header a:visited, header a:hover, header a:active{
+    color: white;
+}
+
+.focus1{
+    color:darkgreen;
+}
+.focus2{
+    color:purple;
+}
+/*#klanten {
+    background-image: url("img/drupal-8.png");
+}*/
+
+/*** STRUCTUUR EN LAY-OUT ***/
+.inhoud, .sitemenu, .footer{
+    width: 80%;
+    margin: 0 auto;
+}
+.footer{
+    height: 5em;
+}
+.footer p{
+    width: 90%;
+    font-size: 1em;
+    margin: 1.8em 0;
+    padding:0 0;
+    float: left;
+}
+time{
+    width: 10%;
+    text-align: center;
+    margin: 1.8em 0;
+    display:inline;
+    width: 10%;
+    float: left;
+    
+    
+}
+.span1{
+    width:25%;
+    min-width: 200px;
+    float: left;
+}
+.span2{
+    width:50%;
+    min-width:400px;
+    float: left;
+}
+
+/*** OPMAAK ***/
+.sitemenu{
+    text-align: center;
+}
+.sitemenu ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+.sitemenu ul li{
+    width:19%;
+    display: inline-block;
+    margin: 0 0;
+    background: orangered;
+    padding: 0;
+}
+.sitemenu ul li a{
+    width: 100%;
+    margin:0;
+    padding: 0 0;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.intro img{
+    float: right;
+    margin: 0 2em;
+    padding: 0;
+    width: 18em;
+}
+.intro ul{
+    width: 45%;
+    list-style-type: none;
+}
+.intro li{
+    background: orangered;
+    color: white;
+    padding: 0.5em;
+    margin: 1em 1em 1em 1em;
+    font-size: 1.5em;
+    border-radius: 10px;
+    display: inline-box;
+ }
+h1{
+    font-family: "Times New Roman";
+    font-size: 2.5em;
+}
+h2{
+    font-family: sans-serif;
+}
+.span1 img{
+    width:95%
+}
+.span2 img{
+    width: 95%;
+}
+.wiewat article{
+    width: 100%;
+    float:left;
+}
+.verwachting img{
+    width: 60px;
+}
+
+/** clear  **/
+.cf{
+    clear:both;
+}
+/*clearfix hack */
+.cf:before,.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearFix:after{
+    clear:both;
+}
+.clearFix {
+    *zoom: 1;
+}
