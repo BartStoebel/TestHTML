@@ -10,6 +10,11 @@
             <minExclusive value="0"></minExclusive>
         </restriction>
     </simpleType>
+    <simpleType name="Alcohol">
+        <restriction base="decimal">
+            <minInclusive value="0"></minInclusive>
+        </restriction>
+    </simpleType>
     <simpleType name="Postcode">
         <restriction base="integer">
             <minInclusive value="1000"></minInclusive>
@@ -38,7 +43,7 @@
             <element name="brouwernr" type="positiveInteger"></element>
             <element name="naam" type="string"></element>   
             <element name="adres" type="vdab:Adres"></element>
-            <element name="omzet" type="vdab:positiveDecimal" minOccurs="0"></element>
+            <element name="omzet" type="nonNegativeInteger" minOccurs="0"></element>
         </sequence>
     </complexType>
     <complexType name="Bier">
@@ -47,7 +52,7 @@
             <element name="naam" type="string"></element>
             <element name="brouwernr" type="positiveInteger"></element>
             <element name="soortnr" type="positiveInteger"></element>
-            <element name="alcohol" type="vdab:positiveDecimal" minOccurs="0"></element>
+            <element name="alcohol" type="vdab:Alcohol" minOccurs="0"></element>
         </sequence>
     </complexType>
     
@@ -83,6 +88,21 @@
             <selector xpath="vdab:alle_bieren/vdab:bier/vdab:biernr"></selector>
             <field xpath="."></field>
         </key>
-        
+        <key name="brouwernrkey">
+            <selector xpath="vdab:brouwerijen/vdab:brouwerij/vdab:brouwernr"></selector>
+            <field xpath="."></field>
+        </key>
+        <key name="soortnrkey">
+            <selector xpath="vdab:soorten/vdab:soort/vdab:soortnr"></selector>
+            <field xpath="."></field>
+        </key>
+        <keyref name="brouwernrref" refer="vdab:brouwernrkey">
+            <selector xpath="vdab:alle_bieren/vdab:bier/vdab:brouwernr"></selector>
+            <field xpath="."></field>
+        </keyref>
+        <keyref name="soortnrref" refer="vdab:soortnrkey">
+            <selector xpath="vdab:alle_bieren/vdab:bier/vdab:soortnr"></selector>
+            <field xpath="."></field>
+        </keyref>
     </element>
 </schema>

@@ -53,7 +53,7 @@ and open the template in the editor.
             <naam>Palm</naam>
             <brouwernr>3</brouwernr>
             <soortnr>1</soortnr>
-            <alcohol>1.2</alcohol>
+            <alcohol>0</alcohol>
         </bier>
         <bier>
             <biernr>2</biernr>
